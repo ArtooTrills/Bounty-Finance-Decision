@@ -1,12 +1,15 @@
 # Bounty-Finance-Decision
 Build a customisable decision making tool for banks to give out loans
 
-You are given a task to build a handy tool for a large bank which will aid them to make quick decisions on giving out loans to potential borrowers. This tool will analyse the financial status of the borrower based on few inputs and gives a score to make a decision. You see the potential that this can be sold to other banks so you need to think about how to build this application in a customisable way
+You are given a task to build a handy tool for a large bank which will aid them to make quick decisions on giving out loans to potential borrowers. This tool will analyse the financial status of the borrower based on few inputs and gives a score to make a decision. You see the potential that this can be sold to other banks, so you need to think about how to build this application in a customisable way
 
 ### The task
-There are 2 different persons who have 2 different interfaces
-- Product Head in the Bank - The admin configuration page - This can set the fields to be captured and what rules to be run
-- The financial summary page - Sales agent collects the financial data (based on above configuration) and sees the decision. 
+There are 2 different personas who have 2 different interfaces. Each interface has 2 parts. The 1st part is the bare minimum requirement, the 2nd part is a bonus round
+
+| Persona  | Interface | Description |
+| ------------- | ------------- | ------------- |
+| Product Head in the Bank  | The admin configuration page  | He defines what fields to be captured and what decision making rules to be run  |
+| Sales Agent | The financial summary page  | He collects the financial data (based on above configuration) and sees the decision |
 
 ### The admin configuration page
 
@@ -34,8 +37,8 @@ The user should be able to specify the rules for scoring based on above fields. 
 | balance  | balance > 20,000 && balance <= 75,000 | 5  |
 | balance  | balance > 75,000 | 10  |
 
-- Total = Sum of age + balance scores
-- Decision = If total > 10 then give the loan, else reject
+- Total Score = age score + balance score
+- Final Decision = If total score > 10 then give the loan, else reject
 
 
 ### The financial summary page
