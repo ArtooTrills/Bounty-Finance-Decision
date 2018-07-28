@@ -55,6 +55,12 @@ According to the above example, the user will see a form which asks for Name, Ag
 
 Based on scoring logic defined by the admin, we should be able to see the total score. As per the above example if age = 25 and balance = 50,000 then loan eligibility score = 15 and the loan can be give
 
+## Things we are expecting
+1) components - dynamic fields - text, dropdowns, validations all defined at an admin level
+2) problem-solving - parse a text-y formula and calculate the scores
+3) Ease of usability
+4) Test cases
+
 ## Final Words
 When you are done, please just create a pull request on this repo. We would like you to come in and present your code to the whole team.
 
